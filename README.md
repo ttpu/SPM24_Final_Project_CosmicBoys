@@ -6,7 +6,7 @@ Yes, you can copy the README directly from here:
 ---
 
 # News Website  
-  
+
 
 ## Team Members:  
 - **Team Lead:** Ostonbekov Islombek (ID: se13373)  

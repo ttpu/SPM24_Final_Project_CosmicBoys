@@ -70,6 +70,10 @@ TEMPLATES = [
     },
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://localhost:8000',
+]
+
 WSGI_APPLICATION = 'config.wsgi.application'
 
 

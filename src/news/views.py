@@ -22,22 +22,22 @@ def search_view(request):
         'query': query,
     }
 
-    return render(request, 'main/search_results.html', context)
+    return render(request, 'search_results.html', context)
 
 class ProductListView(ListView):
     model = Product
-    template_name = 'main/home.html'
+    template_name = 'home.html'
     context_object_name = 'products'
     paginate_by = 1
 
 class ProductDetailView(DetailView):
     model = Product
-    template_name = 'main/product_detail.html'
+    template_name = 'product_detail.html'
     context_object_name = 'product'
 
 class SignUpView(CreateView):
     form_class = SignUpForm
-    template_name = "registration/sign_up.html"
+    template_name = "sign_up.html"
     success_url = reverse_lazy('login')
 
     def form_valid(self, form):
@@ -47,7 +47,7 @@ class SignUpView(CreateView):
 
 class SignInView(LoginView):
     form_class = SignInForm
-    template_name = "registration/sign_in.html"
+    template_name = "sign_in.html"
 
     def get_success_url(self):
         return reverse_lazy('product_list')

@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 
+HANDLE404 = 'news.views.custom_404_view'
+
 # Application definition
 
 INSTALLED_APPS = [
